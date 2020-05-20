@@ -1,0 +1,41 @@
+body{
+	background-color: black;
+	// background-color: red;
+}
+header {
+	.display(space-evenly, center, row);
+	padding: 2rem;
+	font-size: 3rem;
+	color: white;
+	background-color: @navcolor;
+	@media @mobile {
+		flex-direction: column;
+	}
+	nav {
+		width: 50%;
+		.display(space-evenly, center, row);
+		@media @mobile{
+			flex-direction: column;
+		}
+		a{
+			text-decoration: none;
+			color: @textcolor;
+		}
+		}
+	h1{
+		font-size: 4rem;
+	}
+	}
+footer {
+	
+	padding: 2rem;
+	font-size: 2rem;
+	background-color:	@navcolor;
+	nav{
+		.display(space-evenly, center, row);
+		a{
+			text-decoration: none;
+			color: @textcolor;
+		}
+	}
+}
