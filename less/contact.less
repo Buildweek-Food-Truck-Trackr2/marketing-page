@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "navigation";
+
+
+.about{
+    padding: 3rem;
+    color: @textcolor;
+    .display(space-evenly, center, column);
+    h3{
+        font-size: 2.8rem;
+    }
+    container{
+        .display(space-evenly, center, row);
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+    .bio{
+      .display(space-evenly, center, column);
+      font-size: 2rem;
+      padding: 2rem;
+      img {
+          max-width: 55%;
+      }
+    }
+}
+.contact{
+    .display(space-evenly, center, column);
+    color: @textcolor;
+    font-size: 2rem;
+    padding: 4rem;
+}
