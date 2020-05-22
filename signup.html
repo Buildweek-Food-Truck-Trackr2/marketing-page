@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Sleep Tracker</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css" type="text/css">
   <script src="http://lesscss.googlecode.com/files/less-1.0.30.min.js"></script>
 
@@ -21,17 +21,22 @@
     </nav>
   </header>
 
-  <section class="login">
+  <section class="login" id="login2">
     <h3 id="full">Welcome to the Best Sleep of Your Life!</h3>
     <h3 id="short">Welcome!</h3>
     <form>
-      <label for="fname">Username:</label><br>
-      <input type="text" id="fname" name="fname" placeholder="Username"><br>
-      <label for="pword">Password:</label><br>
-      <input type="text" id="pword" name="pword" placeholder="Password">
-      <p></p>
-      <label for="cpword">Confirm Password:</label><br>
-      <input type="text" id="cpword" name="cpword" placeholder="Password">
+      <div class = "firstform">
+        <input type="text" id="uname" name="uname" placeholder="Username"><br>
+      </div>
+      <div class = "secondform">
+        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+      </div>
+      
+      <div class = "thirdform">
+        <input type="text" id="pword" name="pword" placeholder="Password">
+        <input type="text" id="cpword" name="cpword" placeholder="Confirm Password">
+      </div>
     </form>
     <input class="submit" type="submit" value="Sign Up">
   </section>

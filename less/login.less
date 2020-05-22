@@ -1,10 +1,10 @@
 .login {
     .display (space-evenly, center, column);
+    .text {
+        .display (space-evenly,center,column);
+    }
     h3 {
         padding: 4rem;
-        @media @mobile {
-            
-        }
     }
     form {
         font-size: 2rem;
@@ -24,6 +24,35 @@
         font-size: 1.3rem;
         color: @buttoncolor1;
     }
+    .form {
+        margin-top: 5%;
+        .display (space-evenly, center, column);
+    }
+}
+#login1 {
+    .display (space-evenly, center, row);
+    @media @mobile {
+        .display (space-evenly, center, column);
+    }
+ }
+
+#login2 form {
+    .display(space-evenly, center, column);
+    .secondform{
+        .display (space-evenly,center,row);
+    }
+    .firstform{
+        input {
+            margin: 1rem;
+            background-color: @buttoncolor2;
+            border: 1px solid @buttoncolor1;
+            padding: 1rem 22.5rem 1rem 1rem;
+        }
+        .display (space-evenly,center,row);
+    }
+    .thirdform{
+        .display (space-evenly,center,row);
+    }
 }
 
 #short{
@@ -36,6 +65,7 @@
 }
 
 .newuser {
+    color: @textcolor;
     margin: 4rem;
     font-size: 1.6rem;
     .display(space-evenly,center, column);
@@ -44,9 +74,4 @@
         margin: 1rem;
         padding: 1rem, 1rem;
     }
-}
-
-.text {
-    .display (space-evenly,center,column);
-    border: 1px solid red;
 }
