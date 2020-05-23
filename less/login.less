@@ -1,4 +1,77 @@
-@import "variables";
-@import "mixins";
-@import "reset";
-@import "navigation";
+.login {
+    .display (space-evenly, center, column);
+    .text {
+        .display (space-evenly,center,column);
+    }
+    h3 {
+        padding: 4rem;
+    }
+    form {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        input {
+            margin: 1rem;
+            background-color: @buttoncolor2;
+            border: 1px solid @buttoncolor1;
+            padding: 1rem;
+        }
+    }
+    .submit {
+        margin-bottom: 2rem;
+        .buttonstyle();
+    }
+    a {
+        font-size: 1.3rem;
+        color: @buttoncolor1;
+    }
+    .form {
+        margin-top: 5%;
+        .display (space-evenly, center, column);
+    }
+}
+#login1 {
+    .display (space-evenly, center, row);
+    @media @mobile {
+        .display (space-evenly, center, column);
+    }
+ }
+
+#login2 form {
+    .display(space-evenly, center, column);
+    .secondform{
+        .display (space-evenly,center,row);
+    }
+    .firstform{
+        input {
+            margin: 1rem;
+            background-color: @buttoncolor2;
+            border: 1px solid @buttoncolor1;
+            padding: 1rem 22.5rem 1rem 1rem;
+        }
+        .display (space-evenly,center,row);
+    }
+    .thirdform{
+        .display (space-evenly,center,row);
+    }
+}
+
+#short{
+    display: none;
+}
+
+@media @mobile {
+    #short { display: inline-block; }
+    #full { display: none; }
+}
+
+.newuser {
+    color: @textcolor;
+    margin: 4rem;
+    font-size: 1.6rem;
+    .display(space-evenly,center, column);
+    a {
+        .buttonstyle;
+        margin: 1rem;
+        padding: 1rem, 1rem;
+    }
+}

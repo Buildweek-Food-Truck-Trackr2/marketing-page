@@ -4,3 +4,16 @@
     align-items: @a;
     flex-direction: @f;
 }
+
+.buttonstyle {
+    padding: 1rem 4rem;
+    background-color: @buttoncolor2;
+    color: @buttoncolor1;
+    border: 1px solid @buttoncolor1;
+    border-radius: 10px;
+    &:hover {
+        animation-name: animate;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: forwards;
+    }
+}
